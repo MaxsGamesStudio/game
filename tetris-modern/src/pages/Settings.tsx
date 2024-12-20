@@ -3,9 +3,7 @@ import {
   Container,
   Heading,
   VStack,
-  FormControl,
   FormLabel,
-  Switch,
   Select,
   Slider,
   SliderTrack,
@@ -14,6 +12,8 @@ import {
   Button,
   useToast,
 } from '@chakra-ui/react'
+import { FormControl } from '@chakra-ui/form-control'
+import { Switch } from '@chakra-ui/switch'
 import React from 'react'
 import { useState } from 'react'
 

@@ -1,5 +1,9 @@
 import {
   Container,
+  Heading,
+  HStack,
+  Badge,
+  Select,
   Table,
   Thead,
   Tbody,
@@ -7,10 +11,6 @@ import {
   Th,
   Td,
   TableContainer,
-  Heading,
-  Select,
-  HStack,
-  Badge,
 } from '@chakra-ui/react'
 import React from 'react'
 import { useState } from 'react'
@@ -36,7 +36,7 @@ const Leaderboard = () => {
     <Container maxW="container.lg" py={8}>
       <Heading mb={6}>Leaderboard</Heading>
       
-      <HStack mb={6} spacing={4}>
+      <HStack mb={6} gap={4}>
         <Select 
           value={timeFilter}
           onChange={(e) => setTimeFilter(e.target.value)}
