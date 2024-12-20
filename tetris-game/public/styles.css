@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    gap: 1px;
+    background-color: #222;
+}
+
+.cell {
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+}
+
+.cell.active {
+    background-color: #ffcc00;
+}
+
+#score {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
+
+#preview {
+    text-align: center;
+    margin-top: 20px;
+}

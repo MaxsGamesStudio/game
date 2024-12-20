@@ -1,0 +1,29 @@
+{
+  "name": "tetris-game",
+  "version": "1.0.0",
+  "description": "An online Tetris game with multiple game modes.",
+  "main": "src/app.ts",
+  "scripts": {
+    "start": "ts-node src/app.ts",
+    "build": "tsc",
+    "test": "jest"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.0",
+    "ts-node": "^9.0.0",
+    "jest": "^26.0.0",
+    "@types/jest": "^26.0.0",
+    "@types/node": "^14.0.0"
+  },
+  "keywords": [
+    "tetris",
+    "game",
+    "online"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
