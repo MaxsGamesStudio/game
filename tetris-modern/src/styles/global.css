@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Color Scheme */
+  --primary: #3182ce;
+  --secondary: #805ad5;
+  --background: #1a202c;
+  --surface: #2d3748;
+  --text-primary: #ffffff;
+  --text-secondary: #a0aec0;
+  --accent: #4fd1c5;
+  --error: #e53e3e;
+  --success: #38a169;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+/* Game Board Styles */
+.game-board {
+  background-color: var(--surface);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tetris-block {
+  border-radius: 2px;
+  transition: all 0.2s ease;
+}
+
+/* Animation Classes */
+.fade-in {
+  animation: fadeIn 0.3s ease-in;
+}
+
+.slide-up {
+  animation: slideUp 0.4s ease-out;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+/* Game Pieces Colors */
+.piece-i { background-color: #00f0f0; }
+.piece-o { background-color: #f0f000; }
+.piece-t { background-color: #a000f0; }
+.piece-s { background-color: #00f000; }
+.piece-z { background-color: #f00000; }
+.piece-j { background-color: #0000f0; }
+.piece-l { background-color: #f0a000; }
